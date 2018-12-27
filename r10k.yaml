@@ -1,0 +1,5 @@
+:cachedir: '/var/cache/r10k'
+:sources:
+  :control:
+    remote: 'https://github.com/shearn89/puppet-control.git'
+
