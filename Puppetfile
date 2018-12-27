@@ -1,6 +1,5 @@
 mod 'puppetlabs/stdlib'
 mod 'puppetlabs/firewall'
-mod 'shearn89/toughen'
 mod 'puppetlabs/limits'
 mod 'thias/sysctl'
 mod 'puppetlabs/ntp'
@@ -10,3 +9,5 @@ mod 'kemra102/auditd'
 mod 'puppetlabs/concat'
 mod 'puppet/selinux'
 
+mod 'shearn89/toughen',
+  :git => 'https://github.com/shearn89/puppet-toughen.git'
