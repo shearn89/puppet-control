@@ -2,4 +2,4 @@
 :sources:
   :control:
     remote: 'https://github.com/shearn89/puppet-control.git'
-
+    basedir: '/etc/puppetlabs/code/environments'
