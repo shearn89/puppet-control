@@ -1,3 +1,5 @@
+# Class: Role::Base
+#
 class role::base (
   Sensitive[String] $admin_password = 'password'
 ){
