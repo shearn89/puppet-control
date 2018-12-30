@@ -1,6 +1,8 @@
-class role::base {
+class role::base (
+  Sensitive[String] $admin_password = 'password'
+){
 
-  $default_password = Sensitive(pw_hash('password', 'SHA-512', fqdn_rand_string(16)))
+  $default_password = Sensitive(pw_hash($admin_password, 'SHA-512', fqdn_rand_string(16)))
 
   user { 'admin':
     ensure         => present,
