@@ -1,0 +1,5 @@
+---
+toughen::filesystem::tmp_device: '/dev/mapper/centos-tmp'
+toughen::filesystem::var_device: '/dev/mapper/centos-var'
+toughen::filesystem::var_log_device: '/dev/mapper/centos-var_log'
+toughen::filesystem::var_log_audit_device: '/dev/mapper/centos-var_log_audit'
