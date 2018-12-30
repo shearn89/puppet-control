@@ -1,0 +1,15 @@
+---
+# Hiera 5 environment configuration file
+
+version: 5
+
+defaults:
+  data_hash: yaml_data
+  datadir: data
+
+hierarchy:
+  - name: "Node-specific data"
+    path: "nodes/%{trusted.certname}.yaml"
+
+  - name: "Common data"
+    path: "common.yaml"
